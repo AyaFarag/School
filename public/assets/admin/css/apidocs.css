@@ -1,0 +1,121 @@
+@font-face {
+  font-family : "Material Icons";
+  font-style  : normal;
+  font-weight : 400;
+  src         : url(/assets/admin/fonts/material-icons.woff2) format("woff2");
+}
+.material-icons {
+  font-family                   : "Material Icons";
+  font-weight                   : normal;
+  font-style                    : normal;
+  font-size                     : 24px;
+  line-height                   : 1;
+  letter-spacing                : normal;
+  text-transform                : none;
+  display                       : inline-block;
+  white-space                   : nowrap;
+  word-wrap                     : normal;
+  direction                     : ltr;
+  -webkit-font-feature-settings : "liga";
+  -webkit-font-smoothing        : antialiased;
+}
+span.badge {
+  font-weight : bold;
+  padding     : 5px 15px;
+  height      : auto;
+  line-height : normal;
+  float       : none;
+  margin-left : 0;
+}
+
+.url-method {
+  line-height : normal;
+}
+
+
+button.rounded {
+  padding       : 0;
+  width         : 36px;
+  border-radius : 50%;
+}
+
+button.rounded i {
+  margin : 0;
+}
+
+table td {
+  padding : 10px 5px;
+}
+
+nav {
+  padding : 0 20px;
+}
+
+
+.card.endpoint > .card-content > .card-title {
+  font-weight : bold;
+}
+
+.flex {
+  display : -webkit-flex;
+  display : -moz-flex;
+  display : -o-flex;
+  display : flex;
+}
+
+.flex.flex-col {
+  flex-direction : column;
+}
+
+.flex.justify-center {
+  justify-content : center;
+}
+
+.flex.align-center {
+  align-items : center;
+}
+
+.flex.justify-end {
+  justify-content : flex-end;
+}
+
+.flex.space-between {
+  justify-content : space-between;
+}
+
+.flex.space-around {
+  justify-content : space-around;
+}
+
+
+.margin-top {
+  margin-top : 20px;
+}
+
+.margin-bottom {
+  margin-bottom : 20px;
+}
+
+.margin-right {
+  margin-right : 20px;
+}
+
+.margin-bottom.big {
+  margin-bottom : 40px;
+}
+
+.margin-top.big {
+  margin-top : 40px;
+}
+
+.vertical-margin {
+  margin : 20px 0;
+}
+
+.text-centered {
+  text-align : center;
+}
+
+.padding-horizontal {
+  padding : 0 20px;
+}

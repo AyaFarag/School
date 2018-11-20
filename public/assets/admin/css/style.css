@@ -1,0 +1,506 @@
+*::-webkit-scrollbar
+{
+  width            : 5px;
+  background-color : #FFF;
+}
+
+*::-webkit-scrollbar-thumb
+{
+  border-radius    : 10px;
+  background-color : #CCC;
+}
+
+h1, h2, h3, h4, h5 {
+  margin : 0;
+}
+
+.washed-out {
+  color : #6b6b6b;
+}
+
+@font-face {
+  font-family : "Material Icons";
+  font-style  : normal;
+  font-weight : 400;
+  src         : url(/assets/admin/fonts/material-icons.woff2) format("woff2");
+}
+
+.material-icons {
+  font-family                   : "Material Icons";
+  font-weight                   : normal;
+  font-style                    : normal;
+  font-size                     : 24px;
+  line-height                   : 1;
+  letter-spacing                : normal;
+  text-transform                : none;
+  display                       : inline-block;
+  white-space                   : nowrap;
+  word-wrap                     : normal;
+  direction                     : ltr;
+  -webkit-font-feature-settings : "liga";
+  -webkit-font-smoothing        : antialiased;
+}
+
+
+.full-vheight {
+  height : 100vh;
+}
+
+.full-height {
+  height : 100%;
+}
+
+
+/****************************************
+*****************************************
+**
+**  RANDOM STUFF
+**
+*****************************************
+*****************************************/
+
+
+.text-overflow {
+  white-space   : nowrap;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+}
+
+
+.change-status {
+  cursor : pointer;
+}
+
+.badge {
+  display       : inline-block;
+  font-size     : 14px;
+  padding       : 0 15px;
+  font-weight   : bold;
+  border-radius : 13px;
+}
+
+.badge.pending {
+  background : yellow;
+}
+
+.badge.confirmed {
+  background : blue;
+  color      : #FFF;
+}
+
+.badge.on-the-way {
+  background : lightblue;
+}
+
+
+.badge.red {
+  background : firebrick;
+  color      : #FFF;
+}
+
+.badge.green {
+  background : #20da20;
+  color      : #FFF;
+}
+
+.row {
+  margin : 0;
+}
+
+.row.cards > div {
+  margin : 0.5rem 0 1rem 0;
+}
+
+@media only screen and (max-width: 48em) {
+  .row.cards > div + div {
+    margin-top : 10px;
+  }
+}
+
+.divider.no-margin {
+  margin : 0;
+}
+
+nav.bar {
+  padding : 0 15px;
+}
+
+nav .nav-wrapper {
+  padding : 0 30px;
+}
+
+.padded-container {
+  padding : 10px 20px;
+}
+
+
+.main-section {
+  margin-left : 300px;
+}
+
+.sidenav .collapsible li > a {
+  padding     : 0 16px;
+  font-weight : normal;
+  font-size   : 15px;
+  color       : rgba(0,0,0,0.87);
+}
+.sidenav .collapsible > li > a > i {
+  color        : rgb(0, 0, 0);
+  margin-right : 1rem;
+  width        : 2rem;
+  text-align   : center;
+}
+
+.sidenav .collapsible li > a > i {
+  margin-right : 1rem;
+}
+
+.sidenav .collapsible .collapsible-body li.active > a > i {
+  color : #FFF;
+}
+
+.sidenav .collapsible .collapsible-body > ul > li:first-child {
+  box-shadow: inset 0 7px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav .collapsible .collapsible-body > ul > li:last-child {
+  box-shadow: inset 0 -7px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.sidenav {
+  user-select : none;
+}
+
+.sidenav-trigger {
+  position  : absolute;
+  top       : 18px;
+  left      : 20px;
+  z-index   : 99;
+}
+
+.sidenav-trigger i {
+  font-size : 28px;
+  color     : #FFF;
+}
+
+@media all and (max-width : 993px) {
+  .main-section {
+    margin-left : 0;
+  }
+
+  nav .nav-wrapper {
+    padding-left  : 65px;
+    padding-right : 5px;
+  }
+}
+
+.collapsible .collapsible-header > i {
+  margin-right : 0;
+  transition   : transform 300ms ease-in-out;
+}
+
+.collapsible li.active .collapsible-header > i {
+  transform : rotate(-180deg);
+}
+
+.collapsible li .collapsible-body > ul > li > a {
+  padding-left : 30px;
+}
+
+
+button.rounded {
+  padding       : 0;
+  width         : 36px;
+  border-radius : 50%;
+}
+
+button.rounded i {
+  margin : 0;
+}
+
+
+table tr td.action > * {
+  display : inline-block;
+}
+
+table tr td.action {
+  width : 48px;
+}
+
+table tr td.action.size-1 {
+  width : calc(48px);
+}
+
+table tr td.action.size-2 {
+  width : calc(48px * 2);
+}
+
+table tr td.action.size-3 {
+  width : calc(48px * 3);
+}
+
+table tr td.action.size-4 {
+  width : calc(48px * 3);
+}
+table tr td.action.size-5 {
+  width : calc(48px * 5);
+}
+table tr td.action.size-6 {
+  width : calc(48px * 6);
+}
+
+
+nav .navbar-search-container {
+  padding : 10px 0;
+  height  : 100%;
+}
+
+nav .navbar-search {
+  border-radius : 5px;
+  padding : 0 10px;
+}
+
+nav .navbar-search .prefix {
+  position : static;
+}
+
+nav .navbar-search button {
+  margin-right : 10px;
+  margin-top   : 2px;
+}
+
+nav .navbar-search i {
+  line-height  : normal;
+  height       : auto;
+  color        : #FFF;
+}
+
+nav .navbar-search input[type=text] {
+  color         : #FFF;
+  border-bottom : none;
+  height        : 100%;
+  margin        : 0;
+}
+
+
+nav .navbar-search input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom : none;
+}
+
+
+.flot-chart .legend table {
+  display : inline-block;
+  width   : auto;
+}
+
+.flot-chart .legend table tr {
+  border : none;
+}
+
+.flot-chart .legend table .legendColorBox > div {
+  border : none!important;
+}
+
+.flot-chart .legend table .legendColorBox > div > div {
+  border-radius : 50%;
+}
+
+.flot-chart .legend {
+  margin-top : 20px;
+}
+
+.card.chart {
+  padding : 20px 20px 0;
+}
+
+
+
+
+.tap-target {
+  color : #FFF;
+}
+
+/* MOBILE */
+@media all and (max-width : 600px) {
+  .padded-container {
+    padding : 15px 10px;
+  }
+
+  nav .navbar-search-container {
+    padding : 5px 0;
+  }
+}
+
+/****************************************
+*****************************************
+**
+**  MATERIALIZE POLYFILLS
+**
+*****************************************
+*****************************************/
+
+.select-dropdown {
+  overflow-y : auto !important;
+}
+
+.badge.green, .badge.red {
+  color : #FFF;
+}
+
+.helper-text.is-danger {
+  color     : red;
+  font-size : 12px;
+}
+
+.card-content.no-padding {
+  padding : 0;
+}
+
+
+.row.no-margin {
+  margin : 0;
+}
+
+.text-danger {
+  color : #F00;
+}
+
+.input-field {
+  margin : 1.5rem 0;
+}
+
+textarea.materialize-textarea{
+  height: 6rem;
+}
+
+/****************************************
+*****************************************
+**
+**  RANDOM HELPERS
+**
+*****************************************
+*****************************************/
+
+.margin-top {
+  margin-top : 20px;
+}
+
+.margin-bottom {
+  margin-bottom : 20px;
+}
+
+.margin-right {
+  margin-right : 20px;
+}
+
+.margin-left {
+  margin-left : 20px;
+}
+
+.margin-left.small {
+  margin-left : 10px;
+}
+
+
+.margin-left.tiny {
+  margin-left : 5px;
+}
+
+.margin-bottom.big {
+  margin-bottom : 40px;
+}
+
+.margin-top.big {
+  margin-top : 40px;
+}
+
+.vertical-margin {
+  margin : 20px 0;
+}
+
+.horizontal-margin {
+  margin : 0 20px;
+}
+
+
+.padding-bottom {
+  padding-bottom : 20px;
+}
+
+.vertical-padding {
+  padding : 20px 0;
+}
+
+.vertical-padding.big {
+  padding : 40px 0;
+}
+
+.vertical-padding.small {
+  padding : 10px 0;
+}
+
+.vertical-padding.tiny {
+  padding : 5px 0;
+}
+
+.horizontal-padding {
+  padding : 0 20px;
+}
+
+.vertical-padding.small {
+  padding : 0 10px;
+}
+
+.text-centered {
+  text-align : center;
+}
+
+
+.inline-block {
+  display : inline-block;
+}
+
+/****************************************
+*****************************************
+**
+**  FLEX HELPERS
+**
+*****************************************
+*****************************************/
+
+.flex {
+  display : -webkit-flex;
+  display : -moz-flex;
+  display : -o-flex;
+  display : flex;
+}
+
+.flex.flex-col {
+  flex-direction : column;
+}
+
+.flex.justify-center {
+  justify-content : center;
+}
+
+.flex.align-center {
+  align-items : center;
+}
+
+.flex.justify-end {
+  justify-content : flex-end;
+}
+
+.flex.space-between {
+  justify-content : space-between;
+}
+
+.flex.space-around {
+  justify-content : space-around;
+}
+
+.floating-action {
+  position : fixed;
+  bottom : 20px;
+  right : 20px;
+}

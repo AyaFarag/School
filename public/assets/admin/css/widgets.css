@@ -1,0 +1,11 @@
+.clock-widget .day {
+    font-size   : 36px;
+    font-weight : bold;
+}
+
+.clock-widget .time {
+    font-size : 80px;
+}
+.clock-widget .time .hour {
+    font-weight : bold;
+}
